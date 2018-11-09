@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G19009" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Datepicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="SIq-Ca-U4e">
+                                <frame key="frameInset" minX="17" minY="109" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="LU2-sF-vFV"/>
+                                    <constraint firstAttribute="width" constant="340" id="ihU-78-2fT"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="547780542.00910199">
+                                    <!--2018-05-12 01:15:42 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="select your DOB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbf-hO-yO8">
+                                <frame key="frameInset" minX="14" minY="34" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.3810741165" green="0.14350373769999999" blue="0.1404161283" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBc-xc-n29">
+                                <frame key="frameInset" minX="17" minY="351" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Click">
+                                    <color key="titleColor" red="0.3810741165" green="0.14350373769999999" blue="0.1404161283" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickbtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KuZ-Qa-BTF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="your age is " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pw6-HP-O5K">
+                                <frame key="frameInset" minX="14" minY="429" width="343" height="40"/>
+                                <color key="backgroundColor" red="0.91370509248367604" green="0.93023969240837701" blue="0.90240255128620417" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.38107411649214662" green="0.14350373767970059" blue="0.14041612827681446" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dbf-hO-yO8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="1Hg-Kw-Vud"/>
+                            <constraint firstItem="uBc-xc-n29" firstAttribute="top" secondItem="SIq-Ca-U4e" secondAttribute="bottom" constant="65" id="7Jb-Ia-9ab"/>
+                            <constraint firstItem="pw6-HP-O5K" firstAttribute="leading" secondItem="uBc-xc-n29" secondAttribute="leading" id="9zZ-Iw-m29"/>
+                            <constraint firstItem="Dbf-hO-yO8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Cdg-hO-Mag"/>
+                            <constraint firstItem="pw6-HP-O5K" firstAttribute="top" secondItem="uBc-xc-n29" secondAttribute="bottom" constant="60" id="EKu-rF-wsm"/>
+                            <constraint firstItem="pw6-HP-O5K" firstAttribute="trailing" secondItem="uBc-xc-n29" secondAttribute="trailing" id="Ezn-jU-gcq"/>
+                            <constraint firstAttribute="trailing" secondItem="Dbf-hO-yO8" secondAttribute="trailing" constant="10" id="PeX-41-3Og"/>
+                            <constraint firstItem="SIq-Ca-U4e" firstAttribute="trailing" secondItem="Dbf-hO-yO8" secondAttribute="trailing" id="RFA-kQ-3Gf"/>
+                            <constraint firstItem="SIq-Ca-U4e" firstAttribute="top" secondItem="Dbf-hO-yO8" secondAttribute="bottom" constant="41" id="bAF-mg-qlC"/>
+                            <constraint firstItem="uBc-xc-n29" firstAttribute="trailing" secondItem="SIq-Ca-U4e" secondAttribute="trailing" id="fUm-5h-azV"/>
+                            <constraint firstItem="uBc-xc-n29" firstAttribute="leading" secondItem="SIq-Ca-U4e" secondAttribute="leading" id="mbg-d6-Fcz"/>
+                            <constraint firstItem="SIq-Ca-U4e" firstAttribute="leading" secondItem="Dbf-hO-yO8" secondAttribute="leading" id="sUv-in-12v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="DatePicker" destination="SIq-Ca-U4e" id="aQm-BR-zsR"/>
+                        <outlet property="result" destination="pw6-HP-O5K" id="5UI-2S-VAa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
